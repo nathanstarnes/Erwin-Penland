@@ -1,0 +1,348 @@
+/* 
+ - I didn't have access to the Helvetica font so I substituted it with the Myriad Pro font. 
+*/
+/* Responsive Breakpoints */
+/* Colors */
+.clear-left {
+  clear: left;
+}
+
+a:link, a:visited, a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 25pt;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 21.5pt;
+  color: #66534a;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+@media (max-width: 1040px) {
+  h2 {
+    font-size: 20pt;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: Myriad Pro;
+}
+
+header {
+  height: 581px;
+  width: 1000px;
+  margin: 0 auto;
+  background: url(../img/header_bg.jpg);
+  background-position: top;
+}
+@media (max-width: 1040px) {
+  header {
+    width: 100%;
+  }
+}
+
+section {
+  width: 1000px;
+  margin: 0 auto;
+}
+@media (max-width: 1040px) {
+  section {
+    width: 100%;
+  }
+}
+
+.logo_wrap {
+  float: left;
+  margin: 79px 0 0 58px;
+  max-width: 331px;
+  height: 331px;
+}
+
+.header_details {
+  float: left;
+  margin: 79px 0 0 70px;
+  height: 331px;
+  max-width: 440px;
+  font-size: 13pt;
+}
+.header_details a:link, .header_details a:visited, .header_details a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.prize_wrap {
+  width: 100%;
+  height: 217px;
+  background: url(../img/prize_bg.jpg);
+}
+.prize_wrap h1 {
+  float: left;
+  color: #cc432e;
+  line-height: 217px;
+  font-size: 22pt;
+  margin: 0 100px;
+}
+.prize_wrap ul {
+  float: left;
+  width: 400px;
+  color: #66534a;
+  font-size: 13pt;
+  margin: 45px 100px 0 0;
+}
+.prize_wrap ul li {
+  line-height: 1;
+  margin: 15px 0 0 0;
+}
+@media (max-width: 1040px) {
+  .prize_wrap h1 {
+    margin: 0 50px;
+  }
+  .prize_wrap ul {
+    margin: 40px 50px 0 50px;
+    width: 450px;
+    font-size: 12pt;
+  }
+  .prize_wrap ul li {
+    margin: 15px 0 0 0;
+  }
+}
+
+.section_form {
+  background: url(../img/section_bg.jpg);
+  height: 915px;
+  width: 1000px;
+}
+@media (max-width: 1040px) {
+  .section_form {
+    width: 100%;
+  }
+}
+
+.form_wrap {
+  width: 600px;
+  overflow: auto;
+  margin: 50px 0 0 100px;
+  float: left;
+}
+.form_wrap h2 {
+  margin-bottom: 5px;
+}
+@media (max-width: 1040px) {
+  .form_wrap {
+    width: calc(100% - 30px);
+    margin: 50px 0;
+    padding: 0 15px;
+  }
+}
+
+.form_wrap__header {
+  float: left;
+  clear: left;
+  color: #fff;
+  width: 506px;
+  background: #cc432e;
+  height: 40px;
+  line-height: 42px;
+  padding: 0 0 0 20px;
+  font-size: 18px;
+}
+@media (max-width: 1040px) {
+  .form_wrap__header {
+    width: calc(100% - 30px);
+    margin: 0;
+  }
+}
+
+.form_wrap__fields {
+  float: left;
+  clear: left;
+  width: 526px;
+  height: 292px;
+  background: url(../img/form_bg.jpg);
+}
+@media (max-width: 1040px) {
+  .form_wrap__fields {
+    width: calc(100% - 10px);
+  }
+}
+
+.fields_labels {
+  width: 200px;
+  float: left;
+  padding: 24px 0 0 0;
+  height: 268px;
+  text-align: right;
+}
+@media (max-width: 1040px) {
+  .fields_labels {
+    width: 20%;
+  }
+}
+
+.labels_divider {
+  height: 15px;
+  width: 10px;
+  margin: 8px 0;
+}
+
+.labels {
+  font-weight: bold;
+  width: 195px;
+  height: 33px;
+  padding: 0 5px 0 0;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #66534a;
+  margin: 8px 0 0 0;
+}
+@media (max-width: 1040px) {
+  .labels {
+    width: 100%;
+  }
+}
+
+.fields_input {
+  float: left;
+  padding: 26px 0 0 0;
+  width: 319px;
+  height: 200px;
+}
+@media (max-width: 1040px) {
+  .fields_input {
+    width: 80%;
+  }
+}
+
+.input_divider {
+  float: left;
+  clear: left;
+  height: 9px;
+  margin: 8px 0 8px 13px;
+  width: calc(100% - 55px);
+  padding: 0 13px;
+  background: url(../img/divider.jpg);
+}
+
+.text-field, .text-field--email {
+  padding: 11px 13px;
+  height: 10px;
+  border: 1px solid #66534a;
+  width: 111px;
+  margin: 0 0 8px 12px;
+}
+@media (max-width: 1040px) {
+  .text-field, .text-field--email {
+    width: calc(46% - 26px);
+  }
+}
+
+.text-field--email {
+  width: 261px;
+}
+@media (max-width: 1040px) {
+  .text-field--email {
+    width: 90%;
+  }
+}
+
+.form_checkboxes {
+  float: left;
+  clear: left;
+  color: #000;
+  width: 100%;
+  margin: 50px 0;
+}
+.form_checkboxes p {
+  float: left;
+  clear: left;
+  margin-top: 20px;
+}
+
+.input_wrap {
+  float: left;
+  clear: left;
+  width: 20px;
+  height: 23px;
+  padding: 10px;
+  margin: 20px 0 0 0;
+}
+
+.input_wrap + img {
+  float: left;
+  margin: 20px 15px 0 0;
+}
+
+.label_wrap {
+  float: left;
+  width: 70%;
+  margin: 29px 0 0 0;
+  font-size: 12px;
+}
+.label_wrap a:link, .label_wrap a:visited, .label_wrap a:hover {
+  color: #cc432e;
+  text-decoration: underline;
+}
+
+.input_wrap + .label_wrap {
+  margin: 34px 0 0 0;
+}
+
+.notice {
+  color: #cc432e;
+  font-weight: bold;
+}
+
+.submit_btn {
+  float: left;
+  clear: left;
+  height: 47px;
+  width: 209px;
+  margin: 50px 0 0 0;
+  padding: 0;
+}
+
+.medium_logo {
+  float: left;
+  clear: left;
+  margin-top: 20px;
+}
+
+.form_side {
+  float: left;
+  width: 238px;
+  margin: 90px 0 0 30px;
+}
+@media (max-width: 1040px) {
+  .form_side {
+    display: none;
+  }
+}
+
+footer {
+  width: 800px;
+  margin: 0 auto;
+  border-top: 6px solid #efdc90;
+  height: 50px;
+  padding: 20px 100px;
+  color: #66534a;
+  font-size: 11px;
+  text-align: center;
+}
+@media (max-width: 1040px) {
+  footer {
+    width: calc(100% - 200px);
+  }
+}
